@@ -1,2 +1,2 @@
-# MyNotes
-A collection of my notes written in markdown
+# Projects
+A collection of my projects with notes written in markdown
