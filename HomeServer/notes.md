@@ -114,14 +114,6 @@ At this point, I have two main options for where to host **Plex**, and I am stil
 
 ### Option 1: Running Plex Inside Unraid
 
-```mermaid
-flowchart TB
-    subgraph Option1["Option 1: Plex inside Unraid"]
-        PX1[Proxmox Hypervisor] --> UA1[Unraid VM]
-        UA1 --> PL1[Plex]
-        PL1 --> DEV1[Playback Devices]
-    end
-
 Running Plex directly inside **Unraid** is the simplest approach. Unraid has excellent support for **Docker containers**, and the official Plex container can be installed easily.
 
 **Pros:**
@@ -136,15 +128,6 @@ Running Plex directly inside **Unraid** is the simplest approach. Unraid has exc
 ---
 
 ### Option 2: Running Plex in Proxmox (Separate VM or LXC)
-
-```mermaid
-flowchart TB
-    subgraph Option2["Option 2: Plex as Separate VM"]
-            PX2[Proxmox Hypervisor] --> UA2[Unraid VM]
-            PX2 --> PL2[Plex VM]
-            UA2 -->|Network Share (NFS/SMB)| PL2
-            PL2 --> DEV2[Playback Devices]
-    end
 
 The alternative is to run Plex as its own **VM or LXC container inside Proxmox**, separate from Unraid. Plex would still access the media stored on Unraid via a **network share (NFS or SMB)**.
 
