@@ -130,7 +130,8 @@ B --> C(Plex)
 
 **Cons:**
 - **Shared OS updates:** Plex will go down if Unraid reboots for updates.  
-- **Less flexibility for future expansion:** While fine for a single-purpose server, any future experiments with VMs or additional services would be constrained.  
+- **Less Configurability:** Unable to define specifc resources for Plex; Will have to share with Unraid
+- **GPU Passthrough Challenges:** I’ve read that some people encounter issues when trying to pass their GPU to Plex for hardware acceleration.
 
 ---
 
